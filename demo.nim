@@ -33,7 +33,7 @@ proc addNode*[T](x: var Graph[T]; data: sink T): NodeIdx {.nodestroy.} =
 
 proc deleteNode*[T](x: var Graph[T]; idx: NodeIdx) =
   if idx.int < x.nodes.len:
-    x.nodes.delete(idx)
+    x.nodes.delete(idx.int)
     for n in x.nodes.mitems:
       if (let position = n.edges.find(idx); position != -1):
         n.edges.delete(position)
@@ -43,11 +43,11 @@ proc addEdge*[T](x: var Graph[T]; source, neighbor: NodeIdx) =
     x.nodes[source.int].edges.add(neighbor)
 
 proc deleteEdge*[T](x: var Graph[T]; source, neighbor: NodeIdx) =
-  if source < x.nodes.len and neighbor < x.nodes.len:
-    template source: untyped = x.nodes[source.int]
-    if (let neighborIdx = source.edges.find(neighbor.NodeIdx); neighborIdx != -1):
-      template neighbor: untyped = source.edges[neighborIdx]
-      source.edges.delete(neighborIdx)
+  if source.int < x.nodes.len and neighbor.int < x.nodes.len:
+    template node: untyped = x.nodes[source.int]
+    if (let neighborIdx = node.edges.find(neighbor.NodeIdx); neighborIdx != -1):
+      template neighbor: untyped = node.edges[neighborIdx]
+      node.edges.delete(neighborIdx)
 
 proc breadthFirstSearch*[T](graph: Graph[T]; source: NodeIdx): seq[T] =
   var queue: Deque[NodeIdx]
