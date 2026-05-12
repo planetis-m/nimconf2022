@@ -83,11 +83,15 @@ Random Nim values are often **better**.
 
 *Mood beat:*
 
-"We still invite chaos."
+"I am Professor Chaos, bringer of destruction and mayhem."
 
-"We just give it a **type** signature — and a smaller room to trash."
+Pause.
 
-Smile. This sets the tone. Controlled chaos, not anarchy.
+"Butters — with a **tinfoil** hat."
+
+"We do it with a type system and a sanitizer."
+
+Smile. Wait for the laugh. Then: controlled chaos, not anarchy.
 
 ---
 

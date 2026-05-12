@@ -22,7 +22,7 @@ Speaker is Antonis Geralis, presenting at NimConf 2022. Title: "Fuzzing with drc
 
 "Random bytes are useful. Random Nim values are often better." — This is the thesis statement. LibFuzzer is powerful, but forcing every target to parse raw byte streams is wasteful. drchaos translates bytes into typed Nim values, letting the fuzzer explore structured data directly.
 
-The "mood" callout: "We still invite chaos. We just give it a type signature and a smaller room to trash." — Sets the tone: controlled chaos, not blind randomness.
+The "mood" callout: '"I am Professor Chaos, bringer of destruction and mayhem." — Butters, with a tinfoil hat. We do it with a type system and a sanitizer.' — A South Park reference played dry. The joke lands by not overselling it.
 
 ---
 

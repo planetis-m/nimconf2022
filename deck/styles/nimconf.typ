@@ -25,7 +25,7 @@
 #let deck-title = "Fuzzing with drchaos"
 #let deck-subtitle = "Structured fuzzing for Nim"
 #let assets = (
-  logo: "../../images/logo-crown.svg",
+  logo: "../../images/nim-conf-2022.svg",
   stack: "../../images/what_is.png",
 )
 
@@ -96,16 +96,16 @@
   place(top + left, dx: 0.86in, dy: 0.78in)[
     #text(size: 11pt, fill: colors.dim, weight: "semibold", tracking: 0.10em)[NIMCONF 2022]
   ]
-  place(right + horizon, dx: -0.98in)[
-    #image(assets.logo, width: 3.15in)
+  place(right + horizon, dx: -1.40in)[
+    #image(assets.logo, width: 4.0in)
   ]
   pad(left: 0.86in, right: 6.10in, top: 2.10in, bottom: 0.76in)[
     #text(size: 58pt, weight: "bold", fill: colors.text)[#title]
-    #v(0.16in)
+    #v(0.10in)
     #text(size: 24pt, fill: colors.muted)[#subtitle]
-    #v(0.34in)
+    #v(0.20in)
     #rect(width: 3.4in, height: 1.6pt, fill: colors.nim)
-    #v(0.34in)
+    #v(0.20in)
     #text(size: 15pt, fill: colors.dim, tracking: 0.02em)[#byline]
   ]
   _footer(section: "opening")

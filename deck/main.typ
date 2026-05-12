@@ -22,7 +22,7 @@
   )
   #v(0.46in)
   #callout("The mood")[
-    We still invite chaos. We just give it a type signature and a smaller room to trash.
+    "I am Professor Chaos, bringer of destruction and mayhem." — Butters, with a tinfoil hat.
   ]
 ]
 
